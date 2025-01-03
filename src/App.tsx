@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Inicio from './pages/Inicio';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Inicio from './pages/Inicio';
 // import Acerca from './pages/Acerca';
 // import Contacto from './pages/Contacto';
 // import Contador from './pages/Contador'

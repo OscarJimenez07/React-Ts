@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // Componente LazyImage
 function LazyImage({ src, alt }: { src: string; alt: string }) {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ComponenteLento from "./comHijoRMemo";
+import ComponenteLento from "./ComHijoRMemo";
 
 export default function App() {
   const [contador, setContador] = useState(0);

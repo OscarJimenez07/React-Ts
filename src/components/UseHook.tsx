@@ -2,7 +2,7 @@ import React from 'react';
 import useContador from '../hooks/useContador';
 
 const ContadorConHook: React.FC = () => {
-  const { contador, incrementar, decrementar, reset } = useContador(10);
+  const { contador, incrementar, decrementar, reset } = useContador();
 
   return (
     <div>

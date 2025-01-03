@@ -1,38 +1,37 @@
 import React from 'react';
-import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// Importar tus componentes
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Acerca from './pages/Acerca';
 import Contacto from './pages/Contacto';
-import Contador from './pages/Contador';
-import Formulario from './components/FormularioRegistro';
+import Contador from './pages/Contador'
+import Formulario from './components/FormularioRegistro'
 import ComponentePadre from './components/componentePadre';
-import ComPadreRMemo from './components/ComPadreRMemo';
-import LayLoading from './components/LazyLoadingP';
-import LazyLoaingImagen from './components/LazyLoadingImagen';
-import ImagenesSinLazy from './components/ImagenesSinLazy';
-import AnidarComponentes from './components/AnidarComponentes';
-import RenderListas from './components/RenderListas';
-import FormShipping from './components/FormShipping';
+import ComPadreRMemo from './components/ComPadreRMemo'
+import LayLoading from './components/LazyLoadingP'
+import LazyLoaingImagen from './components/LazyLoadingImagen'
+import ImagenesSinLazy from './components/ImagenesSinLazy'
+import AnidarComponentes from './components/AnidarComponentes'
+import RenderListas from './components/RenderListas'
+import FormShipping from './components/FormShipping'
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/React-Ts">
       <nav>
         <ul>
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/acerca">Acerca de</Link></li>
           <li><Link to="/contacto">Contacto</Link></li>
-          <li><Link to="/contador">Contador</Link></li>
-          <li><Link to="/formulario">Formulario</Link></li>
-          <li><Link to="/ComponentePadre">Props</Link></li>
-          <li><Link to="/comPadreRMemo">Optimizador</Link></li>
-          <li><Link to="/LayLoading">LayLoading</Link></li>
-          <li><Link to="/LazyLoaingImagen">LazyLoaingImagen</Link></li>
-          <li><Link to="/ImagenesSinLazy">ImagenesSinLazy</Link></li>
-          <li><Link to="/AnidarComponentes">AnidarComponentes</Link></li>
-          <li><Link to="/RenderListas">RenderListas</Link></li>
-          <li><Link to="/FormShipping">FormShipping</Link></li>
+          <li><Link to="/contador">Contador</Link></li>        
+          <li><Link to="/formulario">Formulario</Link></li>  
+          <li><Link to="/ComponentePadre">Props</Link></li>     
+          <li><Link to="/comPadreRMemo">Optimizador</Link></li>     
+          <li><Link to="/LayLoading">LayLoading</Link></li>    
+          <li><Link to="/LazyLoaingImagen">LazyLoaingImagen</Link></li>    
+          <li><Link to="/ImagenesSinLazy">ImagenesSinLazy</Link></li>    
+          <li><Link to="/AnidarComponentes">AnidarComponentes</Link></li> 
+          <li><Link to="/RenderListas">RenderListas</Link></li> 
+          <li><Link to="/FormShipping">FormShipping</Link></li> 
         </ul>
       </nav>
       <Routes>
@@ -55,3 +54,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
